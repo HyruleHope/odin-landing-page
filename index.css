@@ -16,7 +16,9 @@ button{
     font-family: "Roboto", sans-serif;
 }
 
-p{
+p,
+a,
+button{
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -28,8 +30,15 @@ p{
 .section_4,
 .footer{
     /* width: 100%; */
-    align-self: stretch;
-    border: 1px solid red;   
+    align-self: stretch;   
+}
+
+
+.section_2,
+.section_3,
+.section_4,
+.footer{
+    border: 1px solid red;
 }
 
 .header,
@@ -51,22 +60,62 @@ p{
     /* margin-left: auto; */
 }
 
-.header h3,
-.header a{
+.section_1_textblock h1,
+.header h3{
     color: #F9FAF8;
 }
 
 .header h3{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .header_links{
-    flex-basis: 20%;
+    flex-basis: 22%;
     display: flex;
     justify-content: space-between;
 }
 
 .header_links a{
     text-decoration: none;
+}
+
+
+.section_1{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.section_1_textblock{
+    display: flex;
+    flex-basis: 450px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section_1_textblock h1{
+    font-size: 48px;
+    margin: 0;
+}
+
+.section_1_textblock button{
+    background-color: #3882F6;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.section_1 img{
+    width: auto;
+    height: 300px;
+    margin-left: 13%;
 }
